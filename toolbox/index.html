@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Page Layout</title>
+    <style>
+        @import url('https:fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+      }
+      h1,h2,h3,p{margin: 0;}
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        gap: 20px;
+        min-height: 100vh;
+        max-width: 0 auto;
+      }
+
+      header {
+        grid-column: 1 / -1;
+        background-color: rgb(157, 0, 255);
+        color: rgb(240, 244, 244);
+        padding: 20px;
+        text-align: center;
+        border-bottom: 4px solid #007bff;
+      }
+      footer {
+        grid-column: 1 / -1;
+        background-color: rgb(250, 0, 0);
+        color: rgb(240, 244, 244);
+        padding: 10px;
+        text-align: center;
+      }
+
+      .featured {
+        grid-column: 1 / -1;
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .featured img{
+        max-width: 100%;
+        height :auto;
+      }
+      .featured h2{
+   color: rgb(5, 27, 27);
+   margin-bottom 10px; ;
+       
+      }
+
+      .featured p {
+        line-height: 1.5;
+        color: #161414;
+
+      }
+      .sidebar {
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      .articles {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .article {
+        background-color: #eaeaea;
+        padding: 15px;
+      }
+      .advertisement {
+        background-color: #ddd;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>News Website</h1>
+      </header>
+      <p>lore30
+
+      </p>
+    </div>
+
+    <div class="featured">
+      <h2>Featured news</h2>
+
+      <p>Top Story of the day goes here</p>
+    </div>
+
+    <div class="sidebar">
+      <h3>Trending Articles</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <main class="articles">
+      <div class="article">
+        <h3>Article 1</h3>
+        <p>summary of article 1</p>
+      </div>
+
+      <div class="article">
+        <h3>Article 2</h3>
+        <p>summary of article 2</p>
+      </div>
+
+      <div class="article">
+        <h3>Article 3</h3>
+        <p>summary of article 3</p>
+      </div>
+      <div class="article">
+        <h3>Article 4</h3>
+        <p>summary of article 4</p>
+      </div>
+    </main>
+
+    <div class="advertisement">
+      <h3>Advertisement</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 News Website. All rights reserved</p>
+    </footer>
+  </body>
+</html>
